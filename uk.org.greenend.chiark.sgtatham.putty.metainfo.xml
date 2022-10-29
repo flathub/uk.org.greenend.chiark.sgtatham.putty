@@ -46,6 +46,7 @@
     </keywords>
 
     <releases>
+        <release version="0.78" date="2022-10-29"/>
         <release version="0.77" date="2022-05-27">
             <description>
                 <ul>
@@ -191,5 +192,5 @@
             </description>
         </release>
     </releases>
-    <content_rating type="oars-1.1" />
+    <content_rating type="oars-1.1"/>
 </component>
