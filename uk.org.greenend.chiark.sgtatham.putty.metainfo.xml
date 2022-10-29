@@ -46,6 +46,23 @@
     </keywords>
 
     <releases>
+        <release version="0.78" date="2022-10-29">
+            <description>
+                <ul>
+                    <li>Support for OpenSSH certificates, for both user authentication keys and host keys.</li>
+                    <li>New SSH proxy modes, for running a custom shell command or subsystem on the proxy server instead of forwarding a port through it.</li>
+                    <li>New plugin system to allow a helper program to provide responses in keyboard-interactive authentication, intended to automate one-time password systems.</li>
+                    <li>Support for NTRU Prime post-quantum key exchange.</li>
+                    <li>Support for AES-GCM (in the OpenSSH style rather than RFC 5647).</li>
+                    <li>Support for more forms of Diffie-Hellman key exchange: new larger integer groups (such as group16 and group18), and support for using those and ECDH with GSSAPI.</li>
+                    <li>Bug fix: the 32-bit Windows build now runs on Windows XP again.</li>
+                    <li>Bug fix: server-controlled window title setting now works again even if the character set is ISO 8859 (or a few other affected single-byte character sets).</li>
+                    <li>Bug fix: certain forms of OSC escape sequences (sent by some real servers) could cause PuTTY to crash.</li>
+                    <li>Bug fix: the -pwfile/-pw options no longer affect local key passphrase prompts, and no longer suppress Plink's anti-spoofing measures.</li>
+                    <li>Note: installing the 0.78 or later Windows installer will not automatically uninstall 0.77 or earlier, due to a change we've made to work around a bug. We recommend uninstalling the old version first, if possible. If both end up installed, uninstalling both and then re-installing the new version will fix things up.</li>
+                </ul>
+            </description>
+        </release>
         <release version="0.77" date="2022-05-27">
             <description>
                 <ul>
