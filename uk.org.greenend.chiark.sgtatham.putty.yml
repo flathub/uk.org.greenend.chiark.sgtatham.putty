@@ -1,6 +1,6 @@
 app-id: uk.org.greenend.chiark.sgtatham.putty
 runtime: org.gnome.Platform
-runtime-version: "43"
+runtime-version: '43'
 sdk: org.gnome.Sdk
 rename-desktop-file: putty.desktop
 rename-icon: putty
@@ -23,11 +23,11 @@ modules:
     sources:
       - type: git
         url: https://git.tartarus.org/simon/putty.git
-        tag: "0.77"
-        commit: 61ab33efe48cfd1cea77e249e5598a89f3387fa3
+        tag: '0.78'
+        commit: 4ff82ab29a22936b78510c68f544a99e677efed3
         x-checker-data:
           type: git
-          tag-pattern: "^(\\d+.\\d+)$"
+          tag-pattern: ^(\d+.\d+)$
       - type: file
         path: putty.desktop
       - type: file
