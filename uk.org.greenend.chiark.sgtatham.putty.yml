@@ -11,6 +11,7 @@ finish-args:
   - --device=all
   - --share=ipc
   - --share=network
+  - --persist=.putty
 modules:
   - name: putty
     buildsystem: cmake-ninja
