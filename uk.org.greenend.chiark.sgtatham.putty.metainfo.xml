@@ -46,7 +46,15 @@
     </keywords>
 
     <releases>
-        <release version="0.80" date="2023-12-18"/>
+        <release version="0.80" date="2023-12-18">
+            <description>
+                <ul>
+                    <li>Security fix: support for OpenSSH's new kex-strict protocol modification, addressing a vulnerability in some @openssh.com cipher and MAC modes, in particular ChaCha20+Poly1305.</li>
+                    <li>Bug fix: the MSI-installed version of putty.exe can now find its help file again.</li>
+                    <li>Bug fix: a server sending non-displaying terminal escape sequences such as ESC[0m now no longer resets the scrollback to the bottom of the window.</li>
+                </ul>
+            </description>
+        </release>
         <release version="0.79" date="2023-08-29">
             <description>
                 <ul>
