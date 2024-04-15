@@ -46,6 +46,13 @@
     </keywords>
 
     <releases>
+        <release version="0.81" date="2024-04-15">
+            <description>
+                <ul>
+                    <li>Security fix for CVE-2024-31497: NIST P521 / ecdsa-sha2-nistp521 signatures are no longer generated with biased values of k. The previous bias compromises private keys.</li>
+                </ul>
+            </description>
+        </release>
         <release version="0.80" date="2023-12-18">
             <description>
                 <ul>
