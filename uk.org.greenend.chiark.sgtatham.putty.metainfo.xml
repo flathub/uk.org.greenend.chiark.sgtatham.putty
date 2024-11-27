@@ -46,6 +46,9 @@
     </keywords>
 
     <releases>
+        <release version="0.82" date="2024-11-27">
+            <description></description>
+        </release>
         <release version="0.81" date="2024-04-15">
             <description>
                 <ul>
