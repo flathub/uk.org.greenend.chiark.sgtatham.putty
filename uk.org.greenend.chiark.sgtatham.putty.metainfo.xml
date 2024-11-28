@@ -46,6 +46,25 @@
     </keywords>
 
     <releases>
+        <release version="0.82" date="2024-11-28">
+            <description>
+                <ul>
+                    <li>Major refactoring of Unicode handling to allow the use of 'foreign' Unicode characters, i.e. outside the system's configured default character set / code page. Not yet complete, but the following things work:</li>
+                    <li>Windows console: usernames and passwords entered interactively into PSCP, PSFTP and Plink can use foreign characters.</li>
+                    <li>Windows command line: usernames, remote commands, and filenames entered via command-line options can use foreign characters.</li>
+                    <li>PuTTY's own terminal (on Windows and Unix): even if it's not configured into UTF-8 mode for the main session, interactive usernames and passwords can use foreign characters.</li>
+                    <li>Unicode version update: all character analysis is updated to Unicode 16.0.0.</li>
+                    <li>Unicode terminal rendering: national and regional flags are now understood by PuTTY's terminal emulator. (However, correct display of those flags will depend on fonts and operating system.)</li>
+                    <li>The Event Log mentions the local address and port number of the outgoing connection socket.</li>
+                    <li>Bracketed paste mode can now be turned off in the Terminal > Features panel.</li>
+                    <li>Unix Pageant: new --foreground mode for running as a subprocess.</li>
+                    <li>Bug fix: the 'border width' configuration option is now honoured even when the window is maximised.</li>
+                    <li>Bug fix: SHA-2 based RSA signatures are now sent with correct zero padding.</li>
+                    <li>Bug fix: terminal wrap mishandling caused occasional incorrect redraws in curses-based applications.</li>
+                    <li>Bug fix: Alt + function key in "Xterm 216+" mode sent a spurious extra escape character.</li>
+                </ul>
+            </description>
+        </release>
         <release version="0.81" date="2024-04-15">
             <description>
                 <ul>
