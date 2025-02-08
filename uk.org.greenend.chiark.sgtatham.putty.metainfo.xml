@@ -46,6 +46,9 @@
     </keywords>
 
     <releases>
+        <release version="0.83" date="2025-02-08">
+            <description></description>
+        </release>
         <release version="0.82" date="2024-11-28">
             <description>
                 <ul>
@@ -56,7 +59,7 @@
                     <li>Unicode version update: all character analysis is updated to Unicode 16.0.0.</li>
                     <li>Unicode terminal rendering: national and regional flags are now understood by PuTTY's terminal emulator. (However, correct display of those flags will depend on fonts and operating system.)</li>
                     <li>The Event Log mentions the local address and port number of the outgoing connection socket.</li>
-                    <li>Bracketed paste mode can now be turned off in the Terminal > Features panel.</li>
+                    <li>Bracketed paste mode can now be turned off in the Terminal &gt; Features panel.</li>
                     <li>Unix Pageant: new --foreground mode for running as a subprocess.</li>
                     <li>Bug fix: the 'border width' configuration option is now honoured even when the window is maximised.</li>
                     <li>Bug fix: SHA-2 based RSA signatures are now sent with correct zero padding.</li>
