@@ -46,6 +46,23 @@
     </keywords>
 
     <releases>
+        <release version="0.83" date="2025-02-08">
+            <description>
+                <ul>
+                    <li>Support for ML-KEM, the NIST-standardised post-quantum key exchange mechanism. (In addition to NTRU Prime, which has been supported since 0.78.)</li>
+                    <li>Support for full Unicode file names in Windows file selector dialogs. (However, these do not yet round-trip through a saved session.)</li>
+                    <li>Bug fix: psftp -b works again.</li>
+                    <li>Bug fix: assertion failure if an SSH connection times out at the login prompt.</li>
+                    <li>Bug fix: crash in Pageant if an SSH connection is abandoned while waiting for a deferred decryption passphrase.</li>
+                    <li>Bug fix: tight loop if PuTTY tried to send an empty answerback string.</li>
+                    <li>Bug fix: accidental truncation of some configuration edit boxes' contents to 127 characters.</li>
+                    <li>Bug fix: Windows XP support was accidentally broken, and now reinstated.</li>
+                    <li>Bug fix: restored interoperation with third-party tools that auto-fill login prompts by sending ^M for Return.</li>
+                    <li>Bug fix: confusion when terminal window resized by tools like FancyZones.</li>
+                    <li>Bug fix: the small keypad keys didn't reliably work in the terminal on Unix.</li>
+                </ul>
+            </description>
+        </release>
         <release version="0.82" date="2024-11-28">
             <description>
                 <ul>
@@ -56,7 +73,7 @@
                     <li>Unicode version update: all character analysis is updated to Unicode 16.0.0.</li>
                     <li>Unicode terminal rendering: national and regional flags are now understood by PuTTY's terminal emulator. (However, correct display of those flags will depend on fonts and operating system.)</li>
                     <li>The Event Log mentions the local address and port number of the outgoing connection socket.</li>
-                    <li>Bracketed paste mode can now be turned off in the Terminal > Features panel.</li>
+                    <li>Bracketed paste mode can now be turned off in the Terminal &gt; Features panel.</li>
                     <li>Unix Pageant: new --foreground mode for running as a subprocess.</li>
                     <li>Bug fix: the 'border width' configuration option is now honoured even when the window is maximised.</li>
                     <li>Bug fix: SHA-2 based RSA signatures are now sent with correct zero padding.</li>
