@@ -1,10 +1,16 @@
 app-id: uk.org.greenend.chiark.sgtatham.putty
 runtime: org.freedesktop.Platform
-runtime-version: '24.08'
+runtime-version: '25.08'
 sdk: org.freedesktop.Sdk
 rename-desktop-file: putty.desktop
 rename-icon: putty
 command: putty
+x-export-commands:
+  - putty: putty
+  - puttygen: puttygen
+  - psftp: psftp
+  - pageant: pageant
+  - pscp: pscp
 finish-args:
   - --socket=fallback-x11
   - --socket=wayland
