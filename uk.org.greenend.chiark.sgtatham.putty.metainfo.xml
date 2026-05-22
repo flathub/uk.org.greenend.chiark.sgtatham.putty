@@ -46,6 +46,21 @@
     </keywords>
 
     <releases>
+        <release version="0.84" date="2026-05-22">
+            <description>
+                <ul>
+                    <li>Security issue: fixed a remotely triggerable double-free in RSA key exchange. (We don't know of any way it is exploitable to execute code.)</li>
+                    <li>Minor security issue: fixed a remotely triggerable crash in NIST ECDSA signature verification. (An assertion failure - definitely not exploitable to execute code.)</li>
+                    <li>Minor security issue: fixed marking of Telnet and Rlogin session data with a trust sigil after you authenticated to a proxy (possibly allowing a server to spoof a repeat proxy password prompt).</li>
+                    <li>Ability to run a specified command before starting the connection, e.g. to perform wake-on-LAN or a port knock.</li>
+                    <li>On Unix: display 'pre-edit text', showing the progress of using multiple keystrokes to compose a single Unicode character.</li>
+                    <li>On Unix: improved support for to running the GUI tools on Wayland (fixed startup issues and tuned performance).</li>
+                    <li>Bug fix: configuring a SSH certificate authority on Unix would fail unless you manually made a config directory.</li>
+                    <li>Bug fix: spurious "Network error: Socket is not connected" when authenticating to some HTTP proxies.</li>
+                    <li>Bug fix: disabling cursor blinking in the Windows Control Panel but enabling it in PuTTY would lead to a tight loop.</li>
+                </ul>
+            </description>
+        </release>
         <release version="0.83" date="2025-02-08">
             <description>
                 <ul>
