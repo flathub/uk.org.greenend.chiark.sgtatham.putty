@@ -31,8 +31,8 @@ modules:
     sources:
       - type: git
         url: https://git.tartarus.org/simon/putty.git
-        tag: '0.84'
-        commit: cda57ec785f52a9092f529b206059355646caab6
+        tag: '0.85'
+        commit: a3cce3a48d4ab12e0fccb32998b9042d4f7c3ff1
         x-checker-data:
           type: git
           tag-pattern: ^(\d+.\d+)$
