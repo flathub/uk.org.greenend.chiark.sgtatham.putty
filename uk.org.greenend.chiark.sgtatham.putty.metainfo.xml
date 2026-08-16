@@ -46,6 +46,16 @@
     </keywords>
 
     <releases>
+        <release version="0.85" date="2026-08-16">
+            <description>
+                <ul>
+                    <li>Security issue: fixed a remotely triggerable use-after-free in Pageant. (Might be exploitable to execute code, although this is not proved.)</li>
+                    <li>Security issue: fixed a remotely triggerable buffer overflow if the OpenSSH encrypt-then-MAC cipher modes are in use. (However they are only used if a server supports nothing else.)</li>
+                    <li>Security issue: fixed a buffer overflow in private key decryption, if the private key is constructed maliciously. (Only triggerable on purpose if you let somebody else generate your key for you.)</li>
+                    <li>Denial-of-service security fixes: a server can trigger a tight loop in PuTTY, and even a MITM can make it consume unlimited memory at startup.</li>
+                </ul>
+            </description>
+        </release>
         <release version="0.84" date="2026-05-22">
             <description>
                 <ul>
